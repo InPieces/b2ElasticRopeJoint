@@ -1,4 +1,4 @@
-b2ElasticRopeJoint
+b2ElasticRopeJoint v0.1
 ==================
 
 Elastic Rope Joint with max length and "stretching".
@@ -14,11 +14,11 @@ Usage
 b2ElasticRopeJointDef jointDef;
         
 jointDef.bodyA=b2BodyA;<br>
-jointDef.bodyB=b2BodyB;
-jointDef.collideConnected = true;
-jointDef.length = (b2BodyA->GetPosition() - b2BodyB->GetPosition()).Length();
-//length is the max length the rope should get. After extending the length frequencyHz is used to stretch the rope and let it swing back 
-jointDef.frequencyHz = 0.75;
+jointDef.bodyB=b2BodyB;<br>
+jointDef.collideConnected = true;<br>
+jointDef.length = (b2BodyA->GetPosition() - b2BodyB->GetPosition()).Length();<br>
+//length is the max length the rope should get. After extending the length frequencyHz is used to stretch the rope and let it swing back<br>
+jointDef.frequencyHz = 0.75;<br>
 //Used to define the stretching. Higher values = stiffer rope, lower values = more rubber like effect
         
 world->CreateJoint(&jointDef)

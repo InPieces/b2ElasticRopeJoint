@@ -13,7 +13,7 @@ Usage
 
 b2ElasticRopeJointDef jointDef;
         
-jointDef.bodyA=b2BodyA;
+jointDef.bodyA=b2BodyA;<br>
 jointDef.bodyB=b2BodyB;
 jointDef.collideConnected = true;
 jointDef.length = (b2BodyA->GetPosition() - b2BodyB->GetPosition()).Length();
